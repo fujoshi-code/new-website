@@ -1,0 +1,499 @@
+/* Globals */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+body,
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+.float-right {
+    float: right; 
+}
+
+
+.float-left {
+    float: left; 
+}
+
+
+.text-blue {
+    color: darkblue;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Header */
+.header {
+    
+    background-image: url("https://images8.alphacoders.com/677/thumb-1920-677959.png"); 
+    color :#FFE4E1;  
+}
+
+
+.header h1 {
+    padding: 40px 0 25px;
+    text-align: center;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 5px 0 0; 
+    overflow: hidden;
+    background-color: #17252A;
+}
+  
+.header li {
+    
+    display: inline-block; 
+}
+
+.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* menu icon */
+.header li a.menu {
+    font-size: 40px;
+    color: lightgray;
+    padding: 2px 5px;
+}
+
+.header li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: darkgray;
+}
+
+/* Homepage */
+
+
+
+.homepage {
+   background-image: url("https://cdn.hipwallpaper.com/m/44/21/3xT6Dl.jpg");
+   padding: 0 12px;
+}
+
+.homepage h4 {margin: 20px 30px;
+              font-size:20px;
+     
+
+}
+
+.responsive {
+    
+   
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.gallery {
+    border: none;
+    margin-right:12px;
+    margin-left:100px;
+    margin-bottom:30px;
+               
+    width: calc((100% - 36px) / 4); 
+   
+}
+
+.gallery:nth-of-type(4n) {
+    margin-right: 0; 
+}
+
+.gallery:hover {
+    border: 1px dotted blue;
+}
+  
+.gallery img {
+    width: 100%;
+    
+}
+  
+@media only screen and (max-width: 700px) {
+    
+    .gallery {
+        width: calc((100% - 24px) / 2); 
+        margin-bottom: 12px; 
+    }
+
+    .gallery:nth-of-type(even) {
+        margin-right: 0; 
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .gallery {
+        color:blue;
+        width: 100%;
+    }
+
+    .gallery:nth-of-type(odd) {
+        margin-right: 0; 
+    }
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    color:#283747;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    font-family: cursive;
+}
+
+.pink-top-border {
+    border-top: 1px solid #FAE5D3;
+}
+
+
+
+
+.btn-pink {
+    background-color: #F1948A;
+    padding: 10px 20px;
+    
+    font-weight: bold;
+    border-radius: 30px/10px;   
+}
+
+
+
+.fb-comments{
+    background-color:#FCF3CF;
+    padding: 0px 15px 0px 10px;    
+}
+
+/* Anime */
+
+
+.anime {
+    color:white;
+    background-image: linear-gradient(to right top, #141112, #151214, #151415, #161517, #161618, #18191b, #1a1c1e, #1c1f21, #202527, #242a2c, #283031, #2d3636);
+}
+
+.anime-content {
+    max-width: 1100px; 
+    margin: 0 auto; 
+}
+
+.anime-content img {
+    border:1px dotted grey;
+    width: 40%;
+    margin-left:2px;
+    margin-right: 50px;  
+}
+
+ 
+@media only screen and (max-width: 700px) {
+    .anime-content img {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.anime-content p {
+    padding-top: 10px;
+    color: gray;
+    font-size: 25px;
+    
+}
+
+.anime-content h2{font:size 20px;
+    margin-bottom:20px;
+}
+
+.anime-content h3{margin:40px 40px   ;
+
+}
+
+.anime-content h4 {
+    color: gray;
+    text-align: center;
+}
+  
+.anime-content h5 {
+    color: #f1f1f1;
+    opacity: 0.2;
+    margin:10px;
+    text-align: center;
+}
+
+.anime-content figure {
+    text-align: center;
+}
+
+.b1 {
+    border: none;
+    background-image: linear-gradient(to right top, #141112, #151214, #151415, #161517, #161618, #18191b, #1a1c1e, #1c1f21, #202527, #242a2c, #283031, #2d3636);
+    color: white;
+    font-size:20px;
+    margin-top:20px ;
+    margin-left:0px;
+    width: 150px;
+    height: 100px;
+}
+
+.anime--buttons,
+.anime-episodes,
+.anime-position {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.episodes {
+    background-image: linear-gradient(to right top, #000000, #070205, #0c040c, #0e0712, #0c0b18, #090e1a, #07111c, #04141d, #07161c, #0c181b, #11191a, #151a1a);
+    border-radius: 50%;
+    padding: 10px 50px;
+    color: lightgray;
+    margin: 10px 10px 10px 70px;  
+}
+
+ 
+.open {
+    
+    border: 2px dotted gray;
+    width: 500px;
+    height: 300px;
+}
+
+@media only screen and (max-width: 500px) {
+    .open {
+        width: 300px;
+        height: 180px;
+    }
+}
+
+
+.position {
+    width: 200px;
+    height: 100px;
+    margin-bottom:20px;
+    margin-left:20px;
+}
+
+
+
+/* Movies */
+
+
+.movies {
+    background-image:url("https://media.istockphoto.com/illustrations/light-tones-watercolor-background-illustration-id487358756");
+}
+
+.movies h2 {
+    text-align: center;
+    margin:30px;
+    font-size: 40px;
+}
+
+.movies h3 {
+    font-size: 40px;
+    margin-top: 40px;
+
+}
+
+
+.movies h5{ margin-top:20px;}
+
+   
+.movies ol {
+    margin-top:30px;
+    margin-right: 20px;
+    color: gray;
+    font-size: 30px;
+    
+}
+
+
+.movie-content li {margin-bottom:20px;
+                   margin-left:2px; 
+}
+
+
+.movie-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.man {
+    
+  
+    margin-bottom:60px;
+    margin-right:50px;
+    border: 1px dotted grey;
+    width: 100%;
+}
+
+.god {
+    border-top: 1px solid #F5A1EC;
+    border-bottom: 1px solid #F5A1EC;
+    font-size: 20px;
+    margin-bottom:20px ;
+}
+
+
+
+.great  {
+    border: 1px dotted grey;
+    margin-bottom:50px;
+    width: 50%; 
+}
+
+ 
+@media only screen and (max-width: 700px) {
+    .great {
+        width: 100%;
+    }
+}
+
+/* Sign Up */
+
+.signup form {
+    border:1px solid #ccc;
+}
+
+.signup input[type="text"],
+.signup input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: bold;
+    background: #d9d9d9;
+}
+
+.signup input[type="text"]:focus, 
+.signup input[type="password"]:focus {
+    background: #ddd;
+    
+}
+
+.signup input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+
+.signup hr {
+    border: 1px solid #d9d9d9;
+    margin-bottom: 25px;
+}
+
+.blue {
+    font-family: Georgia, serif; 
+}
+
+
+.cancelbtn,
+.signupbtn {
+    background-color: #C0C0C0;
+    font-weight: bold;
+    padding: 14px 0;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    color: #111;
+    display: inline-block; 
+    width: calc(50% - 2px); 
+}
+
+.cancelbtn:hover,
+.signupbtn:hover {
+    color: #333;
+}
+
+
+.cancelbtn {
+    
+    background-color: #A9A9A9;
+}
+
+
+
+.container {
+    padding: 16px; 
+    background-image:url("https://cdna.artstation.com/p/assets/images/images/012/222/908/large/gaelle-marco-background-athena-1.jpg?1533678279");
+}
+
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+/* Footer */
+.footer {
+    background-image: linear-gradient(to right top, #292b2e, #37383f, #48464f, #5b535f, #71606d);
+    text-align: center;
+}
+
+.footer h6 {
+    color: #cdcdcd;
+}
+
+.footer div {
+   padding: 50px 0; 
+}
+
+.fa {
+
+    padding-top: 12px; 
+    font-size: 30px;
+    width: 55px;
+    height: 55px; 
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 15px; 
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white; 
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+  
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+  
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+  
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
